@@ -47,6 +47,8 @@ group :development do
   gem 'spring'
 end
 
+gem 'slim-rails'
+gem 'bootstrap-sass'
 gem 'active_model_serializers', require: true
 gem 'redis'
 gem 'markdown-rails'
