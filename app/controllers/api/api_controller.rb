@@ -4,7 +4,7 @@ class Api::ApiController < ActionController::Base
 
   def current_tenant
     api_key = request.headers['X-Api-Key'] || params['api_key']
-    return nil unless api_key
+    return unless api_key
     @tenant ||= Tenant.where(api_key: api_key).first
   end
 
