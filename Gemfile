@@ -53,3 +53,4 @@ gem 'active_model_serializers', require: true
 gem 'redis'
 gem 'markdown-rails'
 gem 'ffaker'
+gem 'ionicons-rails'
