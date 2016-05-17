@@ -52,7 +52,10 @@ gem 'bootstrap-sass'
 gem 'ionicons-rails'
 
 gem 'rack-attack'
-gem 'redis'
+gem 'redis-rails'
+gem 'foreman'
+gem 'dotenv-rails'
+
 
 gem 'active_model_serializers', require: true
 
