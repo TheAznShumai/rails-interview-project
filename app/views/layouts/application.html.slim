@@ -3,10 +3,11 @@ html
   head
     meta charset="utf-8" /
     meta content="IE=edge" http-equiv="X-UA-Compatible" /
-    title RailsInterviewProject
+    title Rails Interview Project
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track": true
     = javascript_include_tag "application", "data-turbolinks-track": true
     = stylesheet_link_tag    "//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     = csrf_meta_tags
     meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" /
-  = render "layouts/admin"
+  body
+    = render "layouts/admin"

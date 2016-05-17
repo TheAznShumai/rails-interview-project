@@ -7,4 +7,45 @@ section.content-header
       |  Home
 hr
 section.content
-  hihihihi
+  .row
+    .col-lg-3.col-xs-6
+      // TODO - Pull out as partial
+      .small-box.bg-aqua
+        .inner
+          h3 = @api_request_count
+          p Total Api Requests
+        .icon
+          i.ion.ion-wifi
+        .a.small-box-footer href="#"
+          | More info
+          i.fa.fa-arrow-circle-right
+    .col-lg-3.col-xs-6
+      .small-box.bg-green
+        .inner
+          h3 = @user_count
+          p Total Users
+        .icon
+          i.ion.ion-person-stalker
+        .a.small-box-footer href="#"
+          | More info
+          i.fa.fa-arrow-circle-right
+    .col-lg-3.col-xs-6
+      .small-box.bg-yellow
+        .inner
+          h3 = @question_count
+          p Total Questions
+        .icon
+          i.ion.ion-ios-calendar
+        .a.small-box-footer href="#"
+          | More info
+          i.fa.fa-arrow-circle-right
+    .col-lg-3.col-xs-6
+      .small-box.bg-red
+        .inner
+          h3 = @answer_count
+          p Total Answers
+        .icon
+          i.ion.ion-coffee
+        .a.small-box-footer href="#"
+          | More info
+          i.fa.fa-arrow-circle-right
