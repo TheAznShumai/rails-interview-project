@@ -49,8 +49,12 @@ end
 
 gem 'slim-rails'
 gem 'bootstrap-sass'
-gem 'active_model_serializers', require: true
+gem 'ionicons-rails'
+
+gem 'rack-attack'
 gem 'redis'
+
+gem 'active_model_serializers', require: true
+
 gem 'markdown-rails'
 gem 'ffaker'
-gem 'ionicons-rails'
