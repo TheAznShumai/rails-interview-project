@@ -159,15 +159,15 @@ GEM
       redis-store (~> 1.1.0)
     redis-store (1.1.6)
       redis (>= 2.2)
-    rspec-core (3.4.1)
+    rspec-core (3.4.4)
       rspec-support (~> 3.4.0)
     rspec-expectations (3.4.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.4.0)
-    rspec-mocks (3.4.0)
+    rspec-mocks (3.4.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.4.0)
-    rspec-rails (3.4.0)
+    rspec-rails (3.4.2)
       actionpack (>= 3.0, < 4.3)
       activesupport (>= 3.0, < 4.3)
       railties (>= 3.0, < 4.3)
@@ -240,7 +240,7 @@ DEPENDENCIES
   rack-attack
   rails (= 4.2.4)
   redis-rails
-  rspec-rails
+  rspec-rails (~> 3.4.2)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   slim-rails
