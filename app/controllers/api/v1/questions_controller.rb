@@ -1,7 +1,7 @@
 class Api::V1::QuestionsController < Api::ApiController
   def index
     @questions = Question.accessible.with_users.with_answers
-    @questions = @questions.where('title LIKE ?', params[:term])
+    @questions = @questions.where('title LIKE ?', "%#{params[:term]}%") if params[:term]
     render json: @questions, each_serializer: Api::V1::QuestionsSerializer
   end
 
