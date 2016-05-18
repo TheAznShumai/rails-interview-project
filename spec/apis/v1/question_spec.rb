@@ -20,4 +20,12 @@ describe 'Questions API', type: :request do
     get "/api/v1/questions/#{id}.json?api_key=#{tenant.api_key}"
     expect(response.body).not_to be_empty
   end
+
+  it 'allows you search for a question using the term param' do
+    question = Question.accessible.first
+    title = question.title.chop.chop # remove some chars; tests only bregex
+    get "/api/v1/questions.json?api_key=#{tenant.api_key}&term=#{title}"
+    results_ids = JSON.parse(response.body)['questions'].map{ |question| question['id'] }
+    expect(results_ids).to include(question.id)
+  end
 end
