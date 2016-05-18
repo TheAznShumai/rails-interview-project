@@ -6,7 +6,7 @@ class Api::V1::QuestionsController < Api::ApiController
   end
 
   def show
-    @question = Question.accessible.with_users.with_answers.find(params[:id])
+    @question = Question.with_users.with_answers.find(params[:id])
     render json: @question, serializer: Api::V1::QuestionsSerializer
   end
 end
