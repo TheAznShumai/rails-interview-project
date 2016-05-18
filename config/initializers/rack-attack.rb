@@ -1,6 +1,6 @@
 class Rack::Attack
   Rack::Attack.blacklist('block user without api_key') do |req|
-    req.path.start_with?('/api') && !(req.params['api_key'] || request.headers['X-Api-Key'])
+    req.path.start_with?('/api/') && !(req.params['api_key'] || req.env['HTTP_X_API_KEY'])
   end
 
   throttle('req/api_key/10', limit: 1, period: 10.seconds) do |req|
