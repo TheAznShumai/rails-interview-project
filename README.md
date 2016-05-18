@@ -30,17 +30,17 @@ A Tenant is a consumer of the API you are going to write. A db/seeds.rb file is 
 
 ## Project Setup
 
-Fork this repo to your own Github account, clone it locally, and from the top-level directory run:
+`brew install redis`
+
+`gem install foreman`
 
 `bundle install`
 
 `bundle exec rake db:setup`
 
-To make sure it's all working,
+`foreman start`
 
-`rails s`
-
-You should see this same information.
+These steps are for osx, you may need to change the .env variables if you already installed redis and changed the default configurations
 
 ## Submitting your project
 
