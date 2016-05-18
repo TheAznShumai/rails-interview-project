@@ -25,7 +25,7 @@ module RailsInterviewProject
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    config.cache_store = :redis_store, ENV['REDIS_CACHE_URL'], { expires_in: 3.days }
     config.middleware.use Rack::Attack
-    config.cache_store = :redis_store, ENV['REDIS_CACHE_URL'], { expires_in: 90.minutes }
   end
 end
