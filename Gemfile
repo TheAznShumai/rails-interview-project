@@ -34,6 +34,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
   gem 'pry'
   gem 'pry-byebug'
   gem 'byebug'
@@ -55,7 +57,6 @@ gem 'rack-attack'
 gem 'redis-rails'
 gem 'foreman'
 gem 'dotenv-rails'
-
 
 gem 'active_model_serializers', require: true
 
