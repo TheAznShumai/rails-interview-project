@@ -42,6 +42,14 @@ A Tenant is a consumer of the API you are going to write. A db/seeds.rb file is 
 
 These steps are for osx, you may need to change the .env variables if you already installed redis and changed the default configurations
 
+## Testing
+
+`redis-server`
+
+`rake`
+
+You must have the redis server running the in background to test the throttler
+
 ## Submitting your project
 
 Provide us the URL to your Github fork and we'll clone it to evaluate it.  Expect to discuss your design decisions during the interview.
